@@ -32,6 +32,20 @@
         "description": "Basic tests written for a public GET request from  http://deckofcardsapi.com/"
       },
       "response": []
+    },
+    {
+      "name": "Basic POST Request Tests",
+      "_postman_id": "54e71068-dd82-40eb-b7ad-a57448bc0a36",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "",
+        "description": "This is a public Post Request API from http://deckofcardsapi.com/"
+      },
+      "response": []
     }
   ]
 }
