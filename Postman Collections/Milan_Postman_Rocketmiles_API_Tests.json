@@ -43,7 +43,7 @@
         "method": "GET",
         "header": [],
         "url": "",
-        "description": "This is a public Post Request API from http://deckofcardsapi.com/"
+        "description": "This is a public Post Request API from https://reqres.in"
       },
       "response": []
     }
