@@ -18,6 +18,20 @@
         "description": "This is a GET request to download Postman BDD (Behavior Driven Development) for writing tests in BDD syntax"
       },
       "response": []
+    },
+    {
+      "name": "Basic GET Request Tests",
+      "_postman_id": "e1b37991-a494-4a76-bc5d-fbb838112a2c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "",
+        "description": "Basic tests written for a public GET request from  http://deckofcardsapi.com/"
+      },
+      "response": []
     }
   ]
 }
