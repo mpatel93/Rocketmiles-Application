@@ -4,5 +4,20 @@
     "name": "Milan Postman/Rocketmiles API Tests",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
-  "item": []
+  "item": [
+    {
+      "name": "Fetch Postman BDD",
+      "_postman_id": "9f0edbda-e4af-4d7f-b1b2-d4266eb95367",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "",
+        "description": "This is a GET request to download Postman BDD (Behavior Driven Development) for writing tests in BDD syntax"
+      },
+      "response": []
+    }
+  ]
 }
