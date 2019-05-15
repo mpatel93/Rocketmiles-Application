@@ -1,5 +1,7 @@
 # Rocketmiles-Application
 
+Test Plan --> https://github.com/mpatel93/Rocketmiles-Application/wiki/Test-Plan-for-Rocketmiles
+
 There is many different tools and strategies for API testing available. I decided to use Postman's built in automated 
 API testing. I created my own collection that contains a pubic/stable POST and GET request.
 
