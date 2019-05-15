@@ -29,7 +29,7 @@ pm.test("Deck should contain 52 cards", function () {
     pm.expect(jsonData.remaining).to.eql(52);
 });
 
-//Test 6 - Deck must be suffled  
+//Test 6 - Deck must be shuffled  
 pm.test("Deck should be shuffled", function () {
     var jsonData = pm.response.json();
     pm.expect(jsonData.shuffled).to.eql(true);
