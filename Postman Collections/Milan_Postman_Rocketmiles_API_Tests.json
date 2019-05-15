@@ -7,6 +7,18 @@
   "item": [
     {
       "name": "Fetch Postman BDD",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "cb3f6850-f0cf-48bf-9818-bc5f249a6bcc",
+            "exec": [
+              "postman.setGlobalVariable('postmanBDD', responseBody);"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "_postman_id": "9f0edbda-e4af-4d7f-b1b2-d4266eb95367",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -14,7 +26,7 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": "",
+        "url": "http://bigstickcarpet.com/postman-bdd/dist/postman-bdd.min.js",
         "description": "This is a GET request to download Postman BDD (Behavior Driven Development) for writing tests in BDD syntax"
       },
       "response": []
