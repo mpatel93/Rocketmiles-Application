@@ -33,6 +33,56 @@
     },
     {
       "name": "Basic GET Request Tests",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "6b6a73ba-e23a-41b8-b590-4684a8ef2a2b",
+            "exec": [
+              "//Test 1 - Successful request",
+              "pm.test(\"Status code is 200\", function () { ",
+              "    pm.response.to.have.status(200); ",
+              "});",
+              "",
+              "//Test 2 - Quick Response",
+              "tests[\"Response time is less than 500ms\"] = responseTime < 500;",
+              "",
+              "/** Test 3",
+              "Step 1 - Verify contentTypeHeader exists",
+              "Step 2 - If step 1 passed verify content is of type json **/",
+              "var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");",
+              " ",
+              "tests[\"contentTypeHeader exists\"] = contentTypeHeaderExists;",
+              " ",
+              "if (contentTypeHeaderExists) {",
+              "    tests[\"Content is of type json\"] = ",
+              "      responseHeaders[\"Content-Type\"].has(\"application/json\");",
+              "}",
+              "",
+              "//Test 4 - Response contains a body",
+              "pm.test(\"Response must have a body\", function () {",
+              "     pm.response.to.be.withBody;",
+              "});",
+              "",
+              "//Test 5 - Check how many cards our deck has  ",
+              "pm.test(\"Deck should contain 52 cards\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.remaining).to.eql(52);",
+              "});",
+              "",
+              "//Test 6 - Deck must be suffled  ",
+              "pm.test(\"Deck should be shuffled\", function () {",
+              "    var jsonData = pm.response.json();",
+              "    pm.expect(jsonData.shuffled).to.eql(true);",
+              "});",
+              "",
+              "",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
       "_postman_id": "e1b37991-a494-4a76-bc5d-fbb838112a2c",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -40,7 +90,27 @@
       "request": {
         "method": "GET",
         "header": [],
-        "url": "",
+        "url": {
+          "raw": "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1",
+          "protocol": "https",
+          "host": [
+            "deckofcardsapi",
+            "com"
+          ],
+          "path": [
+            "api",
+            "deck",
+            "new",
+            "shuffle",
+            ""
+          ],
+          "query": [
+            {
+              "key": "deck_count",
+              "value": "1"
+            }
+          ]
+        },
         "description": "Basic tests written for a public GET request from  http://deckofcardsapi.com/"
       },
       "response": []
