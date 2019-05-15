@@ -187,8 +187,7 @@
           "query": [
             {
               "key": "password",
-              "value": "fake",
-              "type": "text"
+              "value": "fake"
             }
           ]
         },
