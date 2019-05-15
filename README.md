@@ -18,7 +18,7 @@ Installations/Setup:
 
 How to Run Solution:
 
-There is 2 ways two run the solution:
+There is 2 ways to run the solution:
 
 Method 1 (Download solution locally and run tests):
 - Download my master branch to your local computer --> https://github.com/mpatel93/Rocketmiles-Application
