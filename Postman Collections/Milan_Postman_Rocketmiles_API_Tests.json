@@ -45,7 +45,7 @@
               "});",
               "",
               "//Test 2 - Quick Response",
-              "tests[\"Response time is less than 500ms\"] = responseTime < 500;",
+              "tests[\"Response time is less than 900ms\"] = responseTime < 900;",
               "",
               "/** Test 3",
               "Step 1 - Verify contentTypeHeader exists",
